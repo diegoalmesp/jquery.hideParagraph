@@ -25,7 +25,7 @@ Check the index.html file for an example, the basic usage is as it follows:
 ##Required libraries##
 jQuery - [http://jquerycom](http://jquerycom)
 
-##Optional librarie##
+##Optional library##
 Font Awesome - [http://fortawesome.github.io/Font-Awesome/](http://fortawesome.github.io/Font-Awesome/)
 
 ##License##
