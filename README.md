@@ -3,7 +3,7 @@
 **hideParagraph** is a simple animated jquery plugin hide a portion of a big paragraph. Is built in a way that will search for every p tag inside a div, and if the length is < to something, it will hide a portion, and unhide on mouseover
 
 ##Version##
-0.1.0
+0.2.0
 
 ##Install##
 Just download the **hide-paragraph.js** file or you can do it through npm too:
