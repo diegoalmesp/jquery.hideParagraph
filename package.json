@@ -1,6 +1,6 @@
 {
-  "name": "jquery.hideParagraph",
-  "version": "0.1.0",
+  "name": "hideparagraph",
+  "version": "0.2.0",
   "description": "a jQuery plugin to search for paragraphs and partially hide them",
   "main": "hide-paragraph.js",
   "scripts": {

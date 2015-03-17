@@ -8,7 +8,7 @@
 ##Install##
 Just download the **hide-paragraph.js** file or you can do it through npm too:
 
-    npm install hideParagraph
+    npm install hideparagraph
 
 ##Usage##
 Check the index.html file for an example, the basic usage is as it follows:
