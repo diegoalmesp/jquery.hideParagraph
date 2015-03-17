@@ -1,0 +1,26 @@
+{
+  "name": "jquery.hideParagraph",
+  "version": "0.1.0",
+  "description": "a jQuery plugin to search for paragraphs and partially hide them",
+  "main": "hide-paragraph.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/diegoalmesp/jquery.hideParagraph"
+  },
+  "keywords": [
+    "hide",
+    "paragraph",
+    "text",
+    "plugin",
+    "jquery"
+  ],
+  "author": "Diego Almirón",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diegoalmesp/jquery.hideParagraph/issues"
+  },
+  "homepage": "https://github.com/diegoalmesp/jquery.hideParagraph"
+}
