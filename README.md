@@ -11,6 +11,8 @@ Just download the **hide-paragraph.js** file or you can do it through npm too:
     npm install hideParagraph
 
 ##Usage##
+Check the index.html file for an example, the basic usage is as it follows:
+
     $('.your-div-container-of-paragraph').hideParagraph({
         speed: 300, // optional
         arrow: '<i class="fa chevron-style"></i>',
@@ -22,6 +24,9 @@ Just download the **hide-paragraph.js** file or you can do it through npm too:
 
 ##Required libraries##
 jQuery - [http://jquerycom](http://jquerycom)
+
+##Optional librarie##
+Font Awesome - [http://fortawesome.github.io/Font-Awesome/](http://fortawesome.github.io/Font-Awesome/)
 
 ##License##
 MIT License

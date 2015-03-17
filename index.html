@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery hideParagraph plugin</title>
+    <meta charset="utf-8">
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+        }
+        
+        body {
+            margin: 0 auto;
+            width: 800px;
+            font-family: 'Helvetica', sans-serif;
+        }
+        
+        .paragraph-container {
+            margin: 10px;
+            background: #ccc;
+            border-radius: 2px;
+        }
+        
+        .code {
+            background: #ECECEC;
+            width: 70%;
+            display: block;
+            margin: 3% 15%;
+            padding: 10px 0;
+            border-radius: 6px;
+        }
+        
+        #tag {
+            background: #ECECEC;
+            padding: 0 3px;
+            border-radius: 2px;
+        }
+        
+        #footer {
+            padding: 10px 0;
+        }
+    </style>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section>
+        <h2>Demo: </h2>
+    </section>
+    <section class="demo">
+        <div class="paragraph-container">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="arrow"></div>
+        <div class="paragraph-container">
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+        </div>
+        <div class="arrow"></div>
+        <div class="paragraph-container">
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+        </div>
+        <div class="arrow"></div>
+    </section>
+    <br><br><hr>
+    <section class="explanation">
+        <h2>How to!</h2>
+        <p>It is extremely simple to use, you need to create a div around every single paragraph, and a element after this (to prepend the image you want)</p>
+        <p>If you set a class to the optional params <code id="tag">arrowDownClass</code> &amp; <code id="tag">arrowUpClass</code>, they will be used to reset the class on mouseover and mouse leave, giving the animation you can see at the examples (top of the page) <small>courtesy of <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">fontawesome</a></small></p><br><br>
+        <p>So, the HTML structure is as it follows: </p>
+        <div class="code">
+            <code class="code">
+                &lt;div class="some-class"&gt; &lt;!-- or id --&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;the paragraph&lt;/p&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;div&gt;&lt;/div&gt; &lt;!-- image will be attached here --&gt;<br>
+            </code>
+        </div>
+        <h2>Usage: </h2>
+        <div class="code">
+            <code class="code">
+                $('.paragraph-container').hideParagraph({<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;speed: 300, // optional<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;arrow: '<i class="fa chevron-style"></i>',<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;arrowDownClass: 'fa-chevron-down', // optional<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;arrowUpClass: 'fa-chevron-up', // optional<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;paragLength: 100, // optional<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;paragFixed: 55 // optional<br>
+                });
+            </code>
+        </div>
+    </section>
+    
+    <footer id="footer">
+        by Diego Almirón | 2015 | License: MIT
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="hide-paragraph.js"></script>
+    <script type="text/javascript">
+        $('.paragraph-container').hideParagraph({
+            speed: 300, // optional
+            arrow: '<i class="fa chevron-style"></i>',
+            arrowDownClass: 'fa-chevron-down', // optional
+            arrowUpClass: 'fa-chevron-up', // optional
+            paragLength: 100, // optional
+            paragFixed: 55 // optional
+        });
+    </script>
+</body>
+</html>
